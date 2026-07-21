@@ -101,7 +101,7 @@ section#sobre{
 }
 
 section#sobre h2{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 section#sobre p{
     margin-top: 10px;
@@ -135,4 +135,73 @@ section#habilidades div.grupo-skills div{
 
 section#habilidades div.grupo-skills div:hover{
     border: 1px solid var(--gradiente-fim)
+}
+
+section#projetos{
+    padding: 100px 10px;
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+section#projetos h2{
+    margin-bottom: 12px;
+}
+section#projetos a{
+    text-decoration: none;
+}
+
+section#projetos a:hover{
+    text-decoration: underline;
+    color: var(--texto);
+}
+
+div.grid-projetos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+div.card-projeto{
+    background-color: var(--card);
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: transform 0.3s;
+}
+
+div.card-projeto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+div.card-projeto:hover{
+    transform: translateY(-5px);
+}
+
+section#contato{
+    padding: 100px 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#contato a{
+    display: inline-block;
+    padding: 10px;
+    background: linear-gradient(135deg, var(--gradiente-inicio), var(--gradiente-fim));
+    color: var(--texto);
+    text-decoration: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+div#botoes-contato{
+    display: flex;
+    gap: 20px;
 }
