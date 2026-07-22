@@ -94,6 +94,10 @@ section#hero a:hover{
     transform: scale(1.05);
 }
 
+nav a.ativo {
+    color: var(--gradiente-fim);
+}
+
 section#sobre{
     padding: 100px 10px;
     max-width: 800px;
@@ -140,7 +144,7 @@ section#habilidades div.grupo-skills div:hover{
 section#projetos{
     padding: 100px 10px;
     max-width: 1000px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 section#projetos h2{
@@ -184,10 +188,12 @@ div.card-projeto:hover{
 section#contato{
     padding: 100px 10px;
     max-width: 800px;
+    min-height: 100vh;
     margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 section#contato a{
@@ -204,4 +210,15 @@ section#contato a{
 div#botoes-contato{
     display: flex;
     gap: 20px;
+}
+
+.animar {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animar.visivel {
+    opacity: 1;
+    transform: translateY(0);
 }
