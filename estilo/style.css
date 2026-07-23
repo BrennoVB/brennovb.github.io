@@ -99,7 +99,7 @@ nav a.ativo {
 }
 
 section#sobre{
-    padding: 100px 10px;
+    padding: 60px 10px;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -113,7 +113,7 @@ section#sobre p{
 }
 
 section#habilidades{
-    padding: 100px 10px;
+    padding: 60px 10px;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -142,7 +142,7 @@ section#habilidades div.grupo-skills div:hover{
 }
 
 section#projetos{
-    padding: 100px 10px;
+    padding: 60px 10px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -186,7 +186,7 @@ div.card-projeto:hover{
 }
 
 section#contato{
-    padding: 100px 10px;
+    padding: 60px 10px;
     max-width: 800px;
     min-height: 100vh;
     margin: 0 auto;
@@ -221,4 +221,23 @@ div#botoes-contato{
 .animar.visivel {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+@media(max-width: 768px){
+    h1{
+        font-size: 32px;
+    }
+
+    div.grid-projetos{
+        grid-template-columns: 1;
+    }
+
+    nav{
+        gap: 10;
+    }
+
+    section#projetos{
+        padding: 40px 5px;
+    }
 }

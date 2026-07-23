@@ -17,3 +17,17 @@ window.addEventListener('scroll', function(){
 
     }
 })
+
+const observar = new IntersectionObserver(function(entrada){
+    entrada.forEach(function(item){
+       if(item.isIntersecting == true){
+        item.target.classList.add('visivel')
+       } 
+    })
+})
+
+const elementosAnimar = document.querySelectorAll('.animar')
+
+elementosAnimar.forEach(function(elemento){
+    observar.observe(elemento)
+})
