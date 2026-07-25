@@ -1,10 +1,10 @@
-*{
+*{ /*Reset Global*/
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-:root{
+:root{ /*Paleta de Cores*/
     --bg: #0F0F1A;
     --gradiente-inicio: #7C3AED;
     --gradiente-fim: #A855F7;
@@ -13,17 +13,17 @@
     --secundario: #64748B;
 }
 
-html{
+html{ /*Rolagem do conteudo HTML*/
     scroll-behavior: smooth;
 }
 
-body{
+body{ /*Corpo*/
     background-color: var(--bg);
     color: var(--texto);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+header{ /*Cabeçalho*/
     position: fixed;
     width: 100%;
     background-color: rgba(15, 15, 26, 0.9);
@@ -32,25 +32,29 @@ header{
     z-index: 100;
 }
 
-nav{
+nav{ /*Area dos links de navegação*/
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
-nav a{
+nav a{ /*Links do menu de navegação*/
     color: var(--secundario);
     text-decoration: none; 
     cursor: pointer;
     transition: color 0.3s;
 }
 
-nav a:hover{
+nav a:hover{ /*Links do menu de navegação ao passar o mouse*/
     color: var(--gradiente-fim);
     
 }
 
-section#hero{
+section { /*Seção geral*/
+    scroll-margin-top: 70px;
+}
+
+section#hero{ /*Seção Hero*/
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -60,7 +64,7 @@ section#hero{
     padding-top: 80px;
 }
 
-section#hero h1{
+section#hero h1{ /*Seção Hero h1*/
     font-size: 48px;
     background: linear-gradient(135deg, var(--gradiente-inicio), var(--gradiente-fim));
     -webkit-background-clip: text;
@@ -68,18 +72,18 @@ section#hero h1{
     background-clip: text;
 }
 
-section#hero p#funcao{
+section#hero p#funcao{ /*Seção Hero paragrafo com id função*/
     font-size: 20px;
     color: var(--texto);
     margin-top: 10px;
 }
 
-section#hero p#objetivo{
+section#hero p#objetivo{ /*Seção Hero paragrafo com id objetivo*/
     color: var(--secundario);
     margin-top: 5px;
 }
 
-section#hero a{
+section#hero a{ /*Seção Hero Links*/
     display: inline-block;
     padding: 10px;
     background: linear-gradient(135deg, var(--gradiente-inicio), var(--gradiente-fim));
@@ -90,45 +94,45 @@ section#hero a{
     transition: transform 0.3s;
 }
 
-section#hero a:hover{
+section#hero a:hover{ /*Seção Hero Links ao passar o mouse*/
     transform: scale(1.05);
 }
 
-nav a.ativo {
+nav a.ativo { /*Links com class ativo no Nav*/
     color: var(--gradiente-fim);
 }
 
-section#sobre{
+section#sobre{ /*Seção sobre*/
     padding: 60px 10px;
     max-width: 800px;
     margin: 0 auto;
 }
 
-section#sobre h2{
+section#sobre h2{ /*Seção sobre h2*/
     margin-top: 20px;
 }
-section#sobre p{
+section#sobre p{ /*Seção sobre paragrafo*/
     margin-top: 10px;
     line-height: 1.4;
 }
 
-section#habilidades{
+section#habilidades{ /*Seção Habilidades*/
     padding: 60px 10px;
     max-width: 800px;
     margin: 0 auto;
 }
 
-section#habilidades h2{
+section#habilidades h2{ /*Seção Habilidades h2*/
     margin-bottom: 10px;
 }
 
-section#habilidades div.grupo-skills{
+section#habilidades div.grupo-skills{ /*Seção Habilidades area grupo skills*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
-section#habilidades div.grupo-skills div{
-    background-color: var(--card);
+section#habilidades div.grupo-skills div{ /*Seção Habilidades area grupo skills, modificação individual das habilidades*/
+    background-color: var(--card); 
     padding: 15px;
     border-radius: 7px;
     text-align: center;
@@ -137,35 +141,35 @@ section#habilidades div.grupo-skills div{
     margin-bottom: 10px;
 }
 
-section#habilidades div.grupo-skills div:hover{
+section#habilidades div.grupo-skills div:hover{/*Seção Habilidades area grupo skills, modificação individual das habilidades ao passar o mouse*/
     border: 1px solid var(--gradiente-fim)
 }
 
-section#projetos{
-    padding: 60px 10px;
+section#projetos{ /*Seção Projetos*/
+    padding: 60px 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-section#projetos h2{
+section#projetos h2{ /*Seção Projetos h2*/
     margin-bottom: 12px;
 }
-section#projetos a{
+section#projetos a{ /* Seção Projetos links*/
     text-decoration: none;
 }
 
-section#projetos a:hover{
+section#projetos a:hover{ /*Seção Projetos links ao passar o mouse*/
     text-decoration: underline;
     color: var(--texto);
 }
 
-div.grid-projetos{
+div.grid-projetos{ /*Modificação do grid projetos*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
-div.card-projeto{
+div.card-projeto{ /*Area do card projeto*/
     background-color: var(--card);
     border-radius: 7px;
     padding: 10px;
@@ -173,7 +177,7 @@ div.card-projeto{
     transition: transform 0.3s;
 }
 
-div.card-projeto img {
+div.card-projeto img { /*Imagem dos projetos*/
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -181,11 +185,11 @@ div.card-projeto img {
     margin-top: 10px;
 }
 
-div.card-projeto:hover{
+div.card-projeto:hover{ /*Area do card projeto ao passar o mouse*/
     transform: translateY(-5px);
 }
 
-section#contato{
+section#contato{ /*Seção Contato*/
     padding: 60px 10px;
     max-width: 800px;
     min-height: 100vh;
@@ -196,7 +200,7 @@ section#contato{
     justify-content: center;
     align-items: center;
 }
-section#contato a{
+section#contato a{ /*Seção Contato links*/
     display: inline-block;
     padding: 10px;
     background: linear-gradient(135deg, var(--gradiente-inicio), var(--gradiente-fim));
@@ -207,24 +211,24 @@ section#contato a{
     transition: transform 0.3s;
 }
 
-div#botoes-contato{
+div#botoes-contato{ /*Botões contato*/
     display: flex;
     gap: 20px;
 }
 
-.animar {
+.animar { /*Class animar*/
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.animar.visivel {
+.animar.visivel { /*Class animar e class visivel*/
     opacity: 1;
     transform: translateY(0);
 }
 
 
-@media(max-width: 768px){
+@media(max-width: 768px){ /*Mobile First*/
     h1{
         font-size: 32px;
     }
