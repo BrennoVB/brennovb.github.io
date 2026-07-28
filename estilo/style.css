@@ -238,7 +238,8 @@ div#botoes-contato{ /*Botões contato*/
     }
 
     nav{
-        gap: 10;
+         gap: 1rem;
+        font-size: 14px;
     }
 
     section#projetos{
